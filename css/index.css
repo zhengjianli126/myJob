@@ -1,0 +1,1104 @@
+@charset "UTF-8";
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "\5FAE\8F6F\96C5\9ED1", Helvetica, sans-serif;
+}
+
+ul,li{
+    list-style: none;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #000;
+
+}
+
+.bodyBg{
+    width: 640px;
+    height: 1080px;
+    /*fill: rgba(26, 18, 41, 0.407843);*/
+}
+.main{
+    width: 640px;
+    height: 1080px;
+    overflow: hidden;
+    position: absolute;
+    left: 50%;
+    margin-left: -320px;
+    /*top:50%;*/
+    /*margin-top: -540px;*/
+    transform-origin: top;
+    -webkit-transform-origin: top;
+}
+
+.main .pos{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    overflow: hidden;
+}
+
+ .Inner1{
+    background: url("../img/bg1.jpg") no-repeat;
+}
+.Inner2{
+    background: url("../img/bg1.jpg") no-repeat;
+}
+.Inner3{
+    background: url("../img/bg7.jpg") no-repeat;
+}
+.Inner4{
+    background: url("../img/bg8.jpg") no-repeat;
+}
+.Inner5{
+    background: url("../img/bg7.jpg") no-repeat;
+}
+.Inner6{
+    background: url("../img/bg4.jpg") no-repeat;
+}
+
+.zIndex{
+    z-index: 10;
+}
+
+/*播放器样式*/
+.music {
+    display: none;
+    z-index: 100;
+    position: absolute;
+    top: 50px;
+    right: 60px;
+    width: 50px;
+    height: 50px;
+    background: url("../img/music.svg") no-repeat;
+    background-size: 100% 100%;
+}
+
+.musicMove {
+    -webkit-animation: musicMove 1s linear 0s infinite;
+    animation: musicMove 1s linear 0s infinite;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@-webkit-keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes musicMove {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.music audio {
+    display: none;
+}
+
+
+.content-box0{
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+}
+
+
+
+#content-box0 .content-element0{
+    position: absolute;
+    width: 440px;
+    height: 1000px;
+    left: 90px;
+    top: 80px;
+    z-index: 1;
+    transform: rotateZ(0deg);
+    background: url("../img/people.png") no-repeat;
+}
+
+#content-box0 .content-element1{
+    position: absolute;
+    transform: rotateZ(0deg);
+    top: 25%;
+    left: 13%;
+    width: 480px;
+    height: 480px;
+    background: url("../img/whitekuang.png") no-repeat center;
+    animation: flipInY 2s ease 0s 1 both;
+    background-size: 100% 100%;
+}
+
+#content-box0 .content-element2{
+    position: absolute;
+    top: 25%;
+    left: 13%;
+    width: 500px;
+    height: 500px;
+}
+
+#content-box0 .content-element2 span{
+    display: block;
+    position: absolute;
+    float: left;
+    color: white;
+}
+
+#content-box0 .content-element2 span:nth-of-type(1){
+    width: 400px;
+    height: 120px;
+    line-height: 60px;
+    font-size: 44px;
+    font-weight: 800;
+    margin-left: -20px;
+    top: 169px;
+    animation: zoomIn 2s ease 0.2s 1 both;
+}
+
+#content-box0 .content-element2 span:nth-of-type(2){
+    width: 300px;
+    height: 100px;
+    font-size: 73px;
+    font-weight: 800;
+    top: 135px;
+    left: 200px;
+    color: #FFFF00;
+    animation: zoomIn 2s ease 0.2s 1 both;
+}
+
+#content-box0 .content-element2 img{
+    width: 292px;
+    height: 60px;
+    position: absolute;
+    top: 305px;
+    left: 102px;
+    animation: flipInX 2s ease 0s 1 both;
+}
+
+#content-box0 .content-element3{
+    position: absolute;
+    left: 50%;
+    bottom: 17%;
+    margin-left: -85px;
+    width:170px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    background: rgb(2, 168, 167);
+
+
+    box-shadow: rgba(0, 0, 0, 0.498039) 0 6px 8px;
+    animation: fadeInUp 2s ease 0s 1 both;
+}
+
+
+/*第二页*/
+.content-box1{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+#content-box1 .content-element0{
+    position: absolute;
+    width: 54px;
+    height: 56px;
+    left: 31%;
+    top: 15%;
+
+    transform: rotateZ(180deg);
+}
+
+#content-box1 .content-element0 img{
+    width: 100%;
+    height: 100%;
+    animation: fadeInUp 0.7s ease 3s 3 both;
+}
+
+
+#content-box1 .content-element1{
+
+    position: absolute;
+    left: 41%;
+    top: 15%;
+    width: 320px;
+    height: 38px;
+    line-height: 38px;
+    color: rgb(2, 168, 167);
+    font-size: 37px;
+    font-weight: bold;
+    animation: fadeInDown 2s ease 2s 1 both;
+}
+
+#content-box1  .content-element2{
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+    top: 30%;
+    width: 160px;
+    height: 160px;
+    transform: rotateZ(45deg);
+}
+
+#content-box1  .content-element2 div{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(2, 168, 167);
+    animation: fadeInDown 2s ease 0s 1 both;
+}
+#content-box1  .content-element2 div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#content-box1  .content-element3{
+    position: absolute;
+    left: 30%;
+    margin-left: -80px;
+    top: 42%;
+    width: 160px;
+    height: 160px;
+    transform: rotateZ(45deg);
+}
+
+#content-box1  .content-element3 div{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(2, 168, 167);
+    animation: fadeInLeft 2s ease 0s 1 both;
+}
+#content-box1  .content-element3 div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#content-box1  .content-element4{
+    position: absolute;
+    left: 70%;
+    margin-left: -80px;
+    top: 42%;
+    width: 160px;
+    height: 160px;
+    transform: rotateZ(45deg);
+}
+
+#content-box1  .content-element4 div{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(2, 168, 167);
+    animation: fadeInRight 2s ease 0s 1 both;
+}
+#content-box1  .content-element4 div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+#content-box1 .content-element5{
+    position: absolute;
+    left: 50%;
+    margin-left: -80px;
+    top: 54%;
+    width: 160px;
+    height: 160px;
+    transform: rotateZ(45deg);
+}
+
+#content-box1  .content-element5 div{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(2, 168, 167);
+    animation: fadeInUp 2s ease 0s 1 both;
+}
+#content-box1  .content-element5 div img{
+    width: 100%;
+    height: 100%;
+}
+
+
+/*目录里面内容*/
+#content-box1 .element2-tip{
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+
+    background: url("../img/little-head.png");
+    background-size: 100%;
+    animation: zoomIn 2s ease 3s 1 both;
+    /*animation: swing 2s ease 2s infinite both;*/
+}
+
+#content-box1 .element2-title{
+    position: absolute;
+    left: 43%;
+    top: 40%;
+    font-size: 25px;
+    color: #fff;
+    animation: fadeInDown 2s ease 3s 1 both;
+}
+
+#content-box1 .element3-tip{
+    position: absolute;
+    left: 30%;
+    top: 42%;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    background: url("../img/little-star.png");
+    background-size: 100%;
+    animation: zoomIn 2s ease 3s 1 both;
+    /*animation: swing 2s ease 2s infinite both;*/
+}
+
+#content-box1 .element3-title{
+    position: absolute;
+    left: 22%;
+    top: 52%;
+
+    font-size: 25px;
+    color: #fff;
+    animation: fadeInLeft 2s ease 3s 1 both;
+}
+
+#content-box1 .element4-tip{
+    position: absolute;
+    left: 70%;
+    top: 43%;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    background: url("../img/little-love.png");
+    background-size: 100%;
+    animation: zoomIn 2s ease 3s 1 both;
+    /*animation: swing 2s ease 2s infinite both;*/
+}
+
+#content-box1 .element4-title{
+    position: absolute;
+    left: 62%;
+    top: 52%;
+
+    font-size: 25px;
+    color: #fff;
+    animation: fadeInRight 2s ease 3s 1 both;
+}
+
+#content-box1 .element5-tip{
+    position: absolute;
+    left: 52%;
+    top: 54%;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+    background: url("../img/little-phone.png");
+    background-size: 100%;
+    animation: zoomIn 2s ease 3s 1 both;
+    /*animation: swing 2s ease 2s infinite both;*/
+}
+
+#content-box1 .element5-title{
+    position: absolute;
+    left: 43%;
+    top: 64%;
+    font-size: 25px;
+    color: #fff;
+    animation: fadeInUp 2s ease 3s 1 both;
+}
+
+.content-title{
+    width: 420px;
+    height: 100px;
+    position: absolute;
+    top: 121px;
+    left: 126px;
+}
+.content-title i{
+    width: 60px;
+    height: 60px;
+
+    background: url('../img/head.png') no-repeat center;
+background-size:100% 100%;
+    float: left;
+    animation: fadeInLeft 1.5s ease 0s 1 both;
+}
+.content-title h2{
+    font-size: 44px;
+    line-height: 44px;
+    color: rgb(2, 168, 167);
+    font-weight:800;
+    float: left;
+    margin-top:10px;
+    margin-left: 20px;
+    margin-right:20px;
+    animation: fadeInRight 1.5s ease 0s 1 both;
+}
+.content-title h4{
+    font-size: 24px;
+    line-height: 44px;
+    color:rgb(2, 168, 167);
+    font-weight:400;
+    float: left;
+    margin-top:20px;
+    animation: fadeInRight 1.5s ease 0s 1 both;
+
+}
+
+/*第三页*/
+.content-box2{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#content-box2 .content-title i{
+    background: url('../img/head.png') no-repeat center;
+    background-size:100% 100%;
+}
+
+#content-box2 .content-element1{
+    position: absolute;
+    top: 246px;
+    left: -287px;
+    width: 700px;
+    height: 700px;
+    background: url("../img/xie-block.png") no-repeat center;
+    background-size: 100% 100%;
+    animation: fadeInLeft 2s ease 0s 1 both;
+}
+
+#content-box2 .up-line{
+    position: absolute;
+    width: 158px;
+    height: 545px;
+    left: 143px;
+    top: 140px;
+    transform: rotateZ(135deg);
+
+}
+
+#content-box2 .up-line img{
+    width: 120px;
+    height: 726px;
+    animation: fadeInUp 1.5s ease 1s 1 both;
+}
+
+#content-box2 .down-line{
+    position: absolute;
+    width: 158px;
+    height: 545px;
+    top: 526px;
+    left: 171px;
+    transform: rotateZ(45deg);
+
+}
+
+#content-box2 .down-line img{
+    width: 120px;
+    height: 726px;
+    animation: fadeInUp 1.5s ease 1s 1 both;
+}
+
+
+#content-box2 .pointer span{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    background: rgb(2, 168, 167);
+    /*animation: puffIn 2s ease 2.3s 1 both;*/
+}
+
+
+
+@keyframes puffIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.4, 1.4);
+        transform: scale(1.4, 1.4);
+    }
+}
+
+@-webkit-keyframes puffIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(1, 1);
+        transform: scale(1, 1);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.4, 1.4);
+        transform: scale(1.4, 1.4);
+    }
+}
+#content-box2 .pointer span:nth-of-type(1){
+    left: 20%;
+    top: 27%;
+    animation: puffIn 2s ease 0.8s 1 both;
+}
+
+#content-box2 .pointer span:nth-of-type(2){
+    left: 30%;
+    top: 33%;
+    animation: puffIn 2s ease 1.3s 1 both;
+}
+
+#content-box2 .pointer span:nth-of-type(3){
+    left: 40%;
+    top: 39%;
+    animation: puffIn 2s ease 1.8s 1 both;
+}
+#content-box2 .pointer span:nth-of-type(4){
+    left: 50%;
+    top: 45%;
+    animation: puffIn 2s ease 2.3s 1 both;
+}
+#content-box2 .pointer span:nth-of-type(5){
+    left: 50%;
+    top: 62%;
+    animation: puffIn 2s ease 2.8s 1 both;
+}
+
+#content-box2 .pointer span:nth-of-type(6){
+    left: 40%;
+    top: 68%;
+    animation: puffIn 2s ease 3.3s 1 both;
+}
+
+#content-box2 .pointer span:nth-of-type(7){
+    left: 30%;
+    top: 74%;
+    animation: puffIn 2s ease 3.8s 1 both;
+}
+#content-box2 .pointer span:nth-of-type(8){
+    left: 20%;
+    top: 80%;
+    animation: puffIn 2s ease 4.3s 1 both;
+}
+
+#content-box2 .pointer span:nth-of-type(9){
+    left: 10%;
+    top: 86%;
+    animation: puffIn 2s ease 4.8s 1 both;
+}
+
+/*.info{*/
+    /*position: absolute;*/
+/*}*/
+
+#content-box2 .info span{
+    display: block;
+    width: 280px;
+    height: 38px;
+    position: absolute;
+    color: #fff;
+    font: normal 28px/28px 'Microsoft Yahei',Tahoma,Helvetica,Arial,sans-serif;
+}
+
+#content-box2 .info span:nth-of-type(1){
+    left: 30%;
+    top: 27%;
+    animation: fadeInRight 1s ease 0.8s 1 both;
+}
+#content-box2 .info span:nth-of-type(2){
+    left: 40%;
+    top: 33%;
+    animation: fadeInRight 1s ease 1.3s 1 both;
+}
+
+#content-box2 .info span:nth-of-type(3){
+    left: 50%;
+    top: 39%;
+    animation: fadeInRight 1s ease 1.8s 1 both;
+}
+#content-box2 .info span:nth-of-type(4){
+    left: 60%;
+    top:45%;
+    animation: fadeInRight 1s ease 2.3s 1 both;
+}
+
+#content-box2 .info span:nth-of-type(5){
+    left: 60%;
+    top: 62%;
+    animation: fadeInRight 1s ease 2.8s 1 both;
+}
+.info span:nth-of-type(6){
+    left: 50%;
+    top: 68%;
+    animation: fadeInRight 1s ease 3.3s 1 both;
+}
+
+#content-box2 .info span:nth-of-type(7){
+    left: 40%;
+    top: 74%;
+    animation: fadeInRight 1s ease 3.8s 1 both;
+}
+#content-box2 .info span:nth-of-type(8){
+    left: 30%;
+    top:80%;
+    animation: fadeInRight 1s ease 4.3s 1 both;
+}
+
+#content-box2 .info span:nth-of-type(9){
+    left: 20%;
+    top:86%;
+    animation: fadeInRight 1s ease 4.8s 1 both;
+}
+
+/*第三页头像*/
+
+#content-box2 .content-element2{
+    position: absolute;
+    width: 260px;
+    height: 260px;
+    left: 9%;
+    top: 43%;
+    /*z-index: 12;*/
+    transform: rotateZ(0deg);
+    background: url("../img/touxiangquan.svg") no-repeat center;
+    background-size: 100% 100%;
+    animation: fadeIn 2s ease 1s 1 both;
+}
+
+#content-box2 .content-element3{
+    position: absolute;
+    width: 230px;
+    height: 230px;
+    left: 11%;
+    top: 44%;
+    border: 4px inset rgb(244, 207, 15);
+    border-radius: 50%;
+    /*z-index: 12;*/
+    transform: rotateZ(0deg);
+    background: url("../img/IMG_7451.jpg") no-repeat center;
+    background-size: 100% 100%;
+    animation: fadeIn 2s ease 2s 1 both;
+}
+
+
+/*第四页*/
+
+.content-box3{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#content-box3 .content-title i{
+    background: url('../img/star.png') no-repeat center;
+    background-size:100% 100%;
+}
+
+#content-box3 .skills span{
+    font:normal 40px/100px "Microsoft Yahei";
+    position: absolute;
+    width: 100px;
+    text-align: center;
+    margin-right:30px;
+    margin-bottom:30px;
+}
+#content-box3 .skills span:nth-of-type(1){
+    animation: fadeIn 2s ease 1s 1 both;
+    color:#66FFFF;
+    left: 16%;
+    top: 25%;
+}
+#content-box3 .skills span:nth-of-type(2){
+    animation: fadeIn 2s ease 1.2s 1 both;
+    color: rgb(244, 113, 31);
+    left: 42%;
+    top: 25%;
+}
+#content-box3 .skills span:nth-of-type(3){
+    animation: fadeIn 2s ease 1.4s 1 both;
+    color:rgb(195, 246, 73);
+    left: 68%;
+    top: 25%;
+}
+#content-box3 .skills span:nth-of-type(4){
+    animation: fadeIn 2s ease 1.6s 1 both;
+    color:rgb(87, 115, 52);
+    left: 16%;
+    top: 40%;
+}
+#content-box3 .skills span:nth-of-type(5){
+    animation: fadeIn 2s ease 1.8s 1 both;
+    color: rgb(0, 188, 230);
+    left: 42%;
+    top: 40%;
+}
+#content-box3 .skills span:nth-of-type(6){
+    animation: fadeIn 2s ease 2s 1 both;
+    color:rgb(157, 63, 166);
+    left: 68%;
+    top: 40%;
+}
+#content-box3 .skills i{
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    border:5px solid;
+    border-top:none;
+    border-right:none;
+    border-radius: 130px;
+}
+#content-box3 .skills i:nth-of-type(1){
+    animation: rotateIn 1.5s ease 0s infinite both;
+    left: 14%;
+    top: 24%;
+    border-color:#66FFFF;
+}
+#content-box3 .skills i:nth-of-type(2){
+    animation: rotateIn 1.5s ease 0.2s infinite both;
+    left: 40%;
+    top: 24%;
+    border-color:rgb(244, 113, 31);
+}
+#content-box3 .skills i:nth-of-type(3){
+    animation: rotateIn 1.5s ease 0.4s infinite both;
+    left: 66%;
+    top: 24%;
+    border-color:rgb(195, 246, 73);
+}
+#content-box3 .skills i:nth-of-type(4){
+    animation: rotateIn 1.5s ease 0.6s infinite both;
+    border-color:rgb(87, 115, 52);
+    left: 14%;
+    top: 39%;
+}
+#content-box3 .skills i:nth-of-type(5){
+    animation: rotateIn 1.5s ease 0.8s infinite both;
+    border-color: rgb(0, 188, 230);
+    left: 40%;
+    top: 39%;
+}
+#content-box3 .skills i:nth-of-type(6){
+    animation: rotateIn 1.5s ease 1s infinite both;
+    border-color:rgb(157, 63, 166);
+    left: 66%;
+    top: 39%;
+}
+
+#content-box3 .sk_list{
+    width:500px;
+    position: absolute;
+    left: 86px;
+    bottom: 134px;
+}
+#content-box3 .sk_list>*{
+    display: block;
+    color:#ffffff;
+}
+#content-box3 .sk_list h5{
+    font:normal 30px/45px "Microsoft Yahei";
+    font-weight:800;
+    color: aqua;
+    animation: fadeIn 2s ease 2s 1 both;
+}
+#content-box3 .sk_list span{
+    font:normal 25px/40px "Microsoft Yahei";
+    font-weight:400;
+    animation: fadeIn 2s ease 2.3s 1 both;
+}
+
+/*第五页*/
+
+.content-box4{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#content-box4 .content-title i{
+    background: url('../img/clock.png') no-repeat center;
+    background-size:100% 100%;
+}
+
+.bg{
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0.6;
+}
+
+/*.content-box4 .content-element0{*/
+    /*position: absolute;*/
+/*}*/
+
+#content-box4 .line{
+    position: absolute;
+    left: 319px;
+    bottom: 180px;
+}
+#content-box4 .line span{
+    display: block;
+    position: relative;
+    height: 150px;
+    width: 2px;
+    background:silver;
+}
+#content-box4 .line span:nth-child(1){
+    animation: fadeIn 1s ease 1.4s 1 both;
+    top: 8px;
+    transform:rotate(-30deg);
+}
+#content-box4 .line span:nth-child(2){
+    animation: fadeIn 1s ease 2.2s 1 both;
+    top:-12px;
+    transform:rotate(30deg);
+}
+#content-box4 .line span:nth-child(3){
+    animation: fadeIn 1s ease 3s 1 both;
+    top: -32px;
+    transform:rotate(-30deg);
+}
+#content-box4 .line span:nth-child(4){
+    animation: fadeIn 1s ease 3.8s 1 both;
+    top: -54px;
+    transform:rotate(30deg);
+}
+#content-box4 .line span i{
+    display: block;
+    position: relative;
+    left: -15px;
+    top: -15px;
+    width:30px;
+    height:30px;
+    border-radius:30px;
+    background:rgb(2, 168, 167);
+}
+#content-box4 .line span:nth-child(1) i{
+    animation: fadeIn 1s ease 1.4s 1 both;
+}
+#content-box4 .line span:nth-child(2) i{
+    animation: fadeIn 1s ease 2.2s 1 both;
+}
+#content-box4 .line span:nth-child(3) i{
+    animation: fadeIn 1s ease 3s 1 both;
+}
+.content-box4 .line span:nth-child(4) i{
+    animation: fadeIn 1s ease 3.8s 1 both;
+}
+#content-box4 .line span:nth-child(4) i:nth-child(2){
+    animation: fadeIn 1s ease 4.2s 1 both;
+    left: -15px;
+    top: 100px;
+}
+#content-box4 .detailed{
+    position: absolute;
+    width: 320px;
+    left: 230px;
+    top: 300px;
+}
+#content-box4 .detailed em,.content-box4 .detailed span{
+    margin-right:10px;
+    width: 141px;
+    float: left;
+    font:normal 26px/40px"";
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 89px;
+}
+#content-box4 .detailed em:nth-child(1){
+    margin-left: -77px;
+    animation: bounceInLeft 1s ease 1.6s 1 both;
+}
+#content-box4 .detailed em:nth-child(3){
+    animation: bounceInLeft 1s ease 2.4s 1 both;
+}
+#content-box4 .detailed em:nth-child(5){
+    margin-left: -76px;
+    animation: bounceInLeft 1s ease 3.2s 1 both;
+}
+#content-box4 .detailed em:nth-child(7){
+    animation: bounceInLeft 1s ease 4.0s 1 both;
+    margin-left: -1px;
+}
+#content-box4 .detailed em:nth-child(9){
+    animation: bounceInLeft 1s ease 4.8s 1 both;
+    margin-left: -74px;
+    margin-top: -3px;
+}
+#content-box4 .detailed span:nth-child(2){
+    animation: bounceInRight 1s ease 1.6s 1 both;
+}
+#content-box4 .detailed span:nth-child(4){
+    animation: bounceInRight 1s ease 2.4s 1 both;
+}
+#content-box4 .detailed span:nth-child(6){
+    animation: bounceInRight 1s ease 3.2s 1 both;
+}
+#content-box4 .detailed span:nth-child(8){
+    animation: bounceInRight 1s ease 4.0s 1 both;
+}
+#content-box4 .detailed span:nth-child(10){
+    margin-top: -3px;
+    animation: bounceInRight 1s ease 4.8s 1 both;
+}
+
+
+/*第六页样式*/
+.content-box5{
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#content-box5 .wei_xinOut{
+    position: absolute;
+    left: 214px;
+    top: 310px;
+    height: 220px;
+    width: 220px;
+    transform: rotateZ(45deg);
+}
+#content-box5 .wei_xinbg{
+    width: 100%;
+    height: 100%;
+    animation: rotateIn 2.5s linear 0s 1 both;
+}
+
+#content-box5 .wei_xin{
+    position: absolute;
+    left: 214px;
+    top: 310px;
+    height: 220px;
+    width: 220px;
+    background: #ffffff;
+    background: url("../img/weinxin.JPG") no-repeat center;
+    background-size: 100% 100%;
+    animation: zoomIn 2s ease 0s 1 both;
+}
+#content-box5 .wei_xinbg{
+    -webkit-transform:rotate(45deg);
+    animation:rotateIn 2.5s linear 0s 1 both;
+    height: 210px;
+    width: 210px;
+    background:none;
+    border:5px solid rgb(2, 168, 167);
+}
+#content-box5 .icon{
+    position: absolute;
+    width:400px;
+    height:200px;
+    color: #fff;
+    left: 184px;
+    bottom: 202px;
+}
+#content-box5 .icon li{
+    position:relative;
+    width:400px;
+    height:50px;
+    font-size:25px;
+    line-height:50px;
+}
+#content-box5 .icon li>*{
+    float: left;
+}
+#content-box5 .icon li i{
+    margin-right:20px;
+    width:50px;
+    height:50px;
+}
+#content-box5 .icon li:nth-child(1)  i{
+    animation: fadeIn 2s ease 1s 1 both;
+}
+#content-box5 .icon li:nth-child(2)  i{
+    animation: fadeIn 2s ease 2s 1 both;
+}
+#content-box5 .icon li:nth-child(3)  i{
+    animation: fadeIn 2s ease 3s 1 both;
+    margin-left:5px;
+    margin-right:18px;
+}
+#content-box5 .icon li:nth-child(4)  i{
+    animation: fadeIn 2s ease 4s 1 both;
+}
+#content-box5 .icon li:nth-child(1) span{
+    animation: fadeInRight 1s ease 1s 1 both;
+}
+#content-box5 .icon li:nth-child(2)  span{
+    animation: fadeInRight 1s ease 2s 1 both;
+}
+#content-box5 .icon li:nth-child(3)  span {
+     animation: fadeInRight 1s ease 3s 1 both;
+ }
+#content-box5 .icon li:nth-child(4)  span{
+    animation: fadeInRight 1s ease 4s 1 both;
+}
+
+/*箭头指示样式*/
+
+
+.p_arr{
+    display: block;
+    width: 90px;
+    height:52px;
+    z-index: 20;
+    position: absolute;
+    left:50%;
+    margin-left: -45px;
+    bottom:70px;
+    animation: 1s infinite arrMove;
+}
+@keyframes arrMove {
+    0%{transform: translateY(60px); opacity: 0}
+    50%{transform: translateY(30px); opacity: 0.8}
+    100%{transform: translateY(0); opacity: 0}
+}
+@-webkit-keyframes arrMove {
+    0%{transform: translateY(60px); opacity: 0}
+    50%{transform: translateY(30px); opacity: 0.8}
+    100%{transform: translateY(0); opacity: 0}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
