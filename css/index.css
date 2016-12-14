@@ -702,7 +702,7 @@ background-size:100% 100%;
     border-radius: 50%;
     /*z-index: 12;*/
     transform: rotateZ(0deg);
-    background: url("../img/IMG_7451.jpg") no-repeat center;
+    background: url("../img/tximg.jpg") no-repeat center;
     background-size: 100% 100%;
     animation: fadeIn 2s ease 2s 1 both;
 }
