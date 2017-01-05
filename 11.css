@@ -1,0 +1,330 @@
+html {
+	overflow: hidden;
+}
+
+body {
+	width: 100%;
+	*cursor: default;
+	overflow: hidden;
+	font: 16px/1.5 "Microsoft YaHei", Helvetica, STHeiti STXihei, Microsoft JhengHei, Arial;
+}
+
+#pageContain {
+	overflow: hidden;
+}
+
+.page {
+	display: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.contain {
+	width: 100%;
+	height: 100%;
+	display: none;
+	position: relative;
+	z-index: 0;
+}
+
+.current .contain, .slide .contain {
+	display: block;
+}
+
+.current {
+	display: block;
+	z-index: 1;
+}
+
+.slide {
+	display: block;
+	z-index: 2;
+}
+
+.swipe {
+	display: block;
+	z-index: 3;
+	transition-duration: 0ms !important;
+	-webkit-transition-duration: 0ms !important;
+}
+
+.page1 {
+	background: url(page1-bg.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.page2 {
+	background: url(page1-bg.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.page3 {
+	background: url(page1-bg.png) no-repeat center center;
+	background-size: 100% 100%;
+}
+
+.page4 {
+	background: #ff00ff;
+}
+
+.page5 {
+	background: #00ff00;
+}
+
+.page6 {
+	background: #22ffff;
+}
+
+#navBar {
+	z-index: 3;
+	position: absolute;
+	top: 30%;
+	right: 3%;
+}
+
+#navBar .active {
+	background: #ccc;
+}
+
+#navBar li {
+	cursor: pointer;
+	margin-bottom: 10px;
+	transition: all .7s ease;
+	border-radius: 50%;
+	line-height: 40px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+}
+
+.txt {
+	margin-top: 20%;
+	font-size: 50px;
+	color: #fff;
+	text-align: center;
+}
+/* 第一思博好友 */
+.firTime {
+	margin-top: 1.813rem;
+	display: block;
+	text-align: center;
+	font-size: 0.533rem;
+	color: #fd8f71;
+}
+.firTitle{
+	margin-top: 0.267rem;
+	display: block;
+	text-align: center;
+	color: #fff;
+	font-size: 0.667rem;
+}
+.fir-user{
+	display: flex;
+	margin-top: 0.107rem;
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+	height: 1.013rem;
+	align-items: center;
+    justify-content: center;
+}
+.userImg{
+	
+	width: 1.013rem;
+	height: 1.013rem;
+	vertical-align:text-bottom;
+}
+.userName{
+	
+	height: 1.013rem;
+	line-height: 1.013rem;
+	margin-left: 0.107rem;
+	color: #fd8f71;
+	font-size: 0.64rem;
+}
+.container-w530{
+	position: relative;
+	width: 7.067rem;
+	height: 6.2rem;
+	margin: 1.493rem auto 0;
+}
+.book{
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1.547rem;
+	height: 1.453rem;
+}
+.green-bott{
+	display: block;
+	position: absolute;
+	top: 3.467rem;
+	width: 5.387rem;
+	height: 2.733rem;
+	left: 50%;
+	margin-left: -2.693rem;
+}
+.dp{
+	display: block;
+	position: absolute;
+	top: 0.32rem;
+	left: 50%;
+	margin-left: -0.573rem;
+	width: 1.147rem;
+	height: 1.053rem;
+}
+.figer{
+	display: block;
+	position: absolute;
+	width: 0.707rem;
+	height: 1.44rem;
+	z-index: 2;
+	top: 2.133rem;
+	left: 50%;
+	margin-left: -0.354rem;
+}
+.left-face{
+	display: block;
+	position: absolute;
+	width: 1.56rem;
+	height: 2.92rem;
+	top: 0.547rem;
+	left: 1.493rem;
+}
+.right-face{
+	display: block;
+	position: absolute;
+	width: 1.56rem;
+	height: 2.92rem;
+	top: 0.547rem;
+	right: 1.493rem;
+}
+.font{
+	width: 7.2rem;
+	height: 1.88rem;
+	margin: 1.813rem auto 0;
+	background: url(page-font1.png) no-repeat;
+	background-size: 6.693rem 1.88rem;
+}
+/* 发帖 */
+.color-fd8f71{
+	color: #fd8f71;
+	font-size: 0.48rem;
+}
+.firFatie{
+	display: block;
+	margin-top: 0.267rem;
+	text-align: center;
+	font-size: 0.4rem;
+	color: #fff;
+}
+.container-w570{
+	position: relative;
+	width: 7.6rem;
+	height: 6.507rem;
+	margin: 1.333rem auto 0;
+}
+.tixing{
+	position: absolute;
+	z-index: 3;
+	left: 50%;
+	top: 3.467rem;
+	margin-left: -2.654rem;
+	display: block;
+	width: 5.307rem;
+	height: 0.187rem;
+}
+.tieshan{
+	position: absolute;
+	top: -0.267rem;
+	left: 50%;
+	z-index: 4;
+	margin-left: -2.6rem;
+	display: block;
+	width: 5.187rem;
+	height: 3.773rem;
+}
+.left-top-tie{
+	position: absolute;
+	top:0.827rem;
+	left: 0.507rem;
+	width: 1.013rem;
+	height: 0.627rem;
+}
+.left-bottom-tie{
+	position: absolute;
+	top:2.96rem;
+	left:0.027rem;
+	width:0.827rem;
+	height:0.68rem;
+}
+.right-top-tie{
+	position: absolute;
+	top: 1.613rem;
+	right: 0;
+	width: 1.16rem;
+	height: 0.68rem;
+}
+.right-bottom-tie{
+	position: absolute;
+	top: 3.413rem;
+	right: 0.04rem;
+	width: 0.72rem;
+	height: 0.453rem;
+}
+.font1{
+	display: block;
+	width: 5.627rem;
+	height: 1.093rem;
+	margin: 1.333rem auto 0;
+	background: url(page-font2.png) no-repeat center center;
+	background-size: 6.2rem 1.093rem;
+}
+/* 回帖 */
+.container-w600{
+	position: relative;
+	width: 8.0rem;
+	height: 6.253rem;
+	margin: 2.24rem auto 0;
+}
+.huitie{
+	width: 3.267rem;
+	height: 3.573rem;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -1.634rem;
+}
+.huitie1{
+	position: absolute;
+	width: 1.88rem;
+	height: 1.84rem;
+	top: 0.613rem;
+	left: 0.4rem;
+}
+.huitie2{
+	position: absolute;
+	width: 1.413rem;
+	height: 1.24rem;
+	top: 2.267rem;
+	right: 0.053rem;
+}
+.huitie3{
+	position: absolute;
+	width: 0.72rem;
+	height: 0.72rem;
+	top: 0.187rem;
+	right:0.773rem;
+}
+.font2{
+	width: 5.92rem;
+	height: 0.973rem;
+	margin: 1.427rem auto 0;
+	background: url(page-font3.png) no-repeat;
+	background-size: 5.92rem 0.973rem;
+}

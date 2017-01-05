@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<title>1</title>
+<script src="flexible_css.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="">
+<link rel="stylesheet" type="text/css" href="reset.min.css">
+<link rel="stylesheet" type="text/css" href="11.css">
+</head>
+<body>
+<div id="pageContain">
+	<div class="page page1 current">
+		<div class="contain">
+			<span class="firTime">20xx年xx月xx日</span>
+			<span class="firTitle">你有了第一个思博好友</span>
+			<div class="fir-user">
+				<img class="userImg" src="mr-img.png" alt=""><span class="userName">XXX</span>
+			</div>
+			<div class="container-w530">
+				<img class="book" src="qipao.png" alt="">
+				<img class="left-face" src="left-face.png" alt="">
+				<img class="right-face" src="right-face.png" alt="">
+				<img class="green-bott" src="green-bott.png" alt="">
+				<img class="dp" src="dp.png" alt="">
+				<img class="figer" src="figer.png" alt="">
+			</div>
+			<div class="font"></div>
+		</div>
+	</div>
+	<div class="page page2">
+		<div class="contain">
+			<span class="firTime">20xx年xx月xx日</span>
+			<span class="firTitle">您发表第一篇主题帖</span>
+			<span class="firFatie">截止至今，你一共发帖&nbsp;<span class="color-fd8f71">xxx</span>&nbsp;个</span>
+			<span class="firFatie">你的发帖数量打败了全国&nbsp;<span class="color-fd8f71">xx％</span>&nbsp;的思博网友</span>
+			<div class="container-w570">
+			    <img class="tixing" src="tixing.png" alt="">
+				<img class="green-bott" src="green-bott.png" alt="">
+				<img class="tieshan" src="tieshan.png" alt="">
+				<img class="left-top-tie" src="left-top-tie.png" alt="">
+				<img class="right-top-tie" src="right-top-tie.png" alt="">
+				<img class="left-bottom-tie" src="left-bottom-tie.png" alt="">
+				<img class="right-bottom-tie" src="right-bottom-tie.png" alt="">
+			</div>
+			<div class="font1"></div>
+		</div>
+	</div>
+
+	<div class="page page3">
+		<div class="contain">
+			<span class="firTime">20xx年xx月xx日</span>
+			<span class="firFatie">你的主题贴一共收到了&nbsp;<span class="color-fd8f71">xxx</span>&nbsp;个回帖</span>
+			<span class="firFatie">你的帖子被浏览&nbsp;<span class="color-fd8f71">xx</span>&nbsp;次</span>
+			<div class="container-w600">
+				<img class="green-bott" src="green-bott.png" alt="">
+				<img class="huitie" src="huitie.png" alt="">
+				<img class="huitie1" src="huitie1.png" alt="">
+				<img class="huitie2" src="huitie2.png" alt="">
+				<img class="huitie3" src="huitie3.png" alt="">
+			</div>
+			<div class="font2"></div>
+		</div>
+	</div>
+
+	<div class="page page4">
+		<div class="contain">
+			
+		</div>
+	</div>
+
+	<div class="page page5">
+		<div class="contain">
+			
+		</div>
+	</div>
+</div>
+
+<ul id="navBar">
+	<li>1</li>
+	<li>2</li>
+	<li>3</li>
+	<li>4</li>
+	<li>5</li>
+</ul>
+<script src="flexible.js"></script>
+<script src="js/fullPage.min.js"></script>
+<script>
+var runPage;
+runPage = new FullPage({
+	id: 'pageContain',
+	slideTime: 800,
+	effect: {
+		transform: {
+			translate: 'Y'
+		},
+		opacity: [0, 1]
+	},
+	mode: 'wheel, touch, nav:navBar',
+	easing: 'ease'
+});
+
+</script>
+
+</body>
+</html>
