@@ -109,7 +109,7 @@ body {
 }
 /* 第一思博好友 */
 .firTime {
-	margin-top: 1.813rem;
+	margin-top: 1rem;
 	display: block;
 	text-align: center;
 	font-size: 0.533rem;
@@ -207,7 +207,7 @@ body {
 .font{
 	width: 7.2rem;
 	height: 1.88rem;
-	margin: 1.813rem auto 0;
+	margin: 1.213rem auto 0;
 	background: url(page-font1.png) no-repeat;
 	background-size: 6.693rem 1.88rem;
 }
@@ -281,7 +281,7 @@ body {
 	display: block;
 	width: 5.627rem;
 	height: 1.093rem;
-	margin: 1.333rem auto 0;
+	margin: 1.033rem auto 0;
 	background: url(page-font2.png) no-repeat center center;
 	background-size: 6.2rem 1.093rem;
 }
@@ -324,7 +324,7 @@ body {
 .font2{
 	width: 5.92rem;
 	height: 0.973rem;
-	margin: 1.427rem auto 0;
+	margin: 1.227rem auto 0;
 	background: url(page-font3.png) no-repeat;
 	background-size: 5.92rem 0.973rem;
 }
