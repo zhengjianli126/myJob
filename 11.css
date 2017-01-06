@@ -52,33 +52,10 @@ body {
 	-webkit-transition-duration: 0ms !important;
 }
 
-.page1 {
+.page-list{
 	background: url(page1-bg.png) no-repeat center center;
 	background-size: 100% 100%;
 }
-
-.page2 {
-	background: url(page1-bg.png) no-repeat center center;
-	background-size: 100% 100%;
-}
-
-.page3 {
-	background: url(page1-bg.png) no-repeat center center;
-	background-size: 100% 100%;
-}
-
-.page4 {
-	background: #ff00ff;
-}
-
-.page5 {
-	background: #00ff00;
-}
-
-.page6 {
-	background: #22ffff;
-}
-
 #navBar {
 	z-index: 3;
 	position: absolute;
@@ -205,7 +182,7 @@ body {
 	right: 1.493rem;
 }
 .font{
-	width: 7.2rem;
+	width: 6.693rem;
 	height: 1.88rem;
 	margin: 1.213rem auto 0;
 	background: url(page-font1.png) no-repeat;
@@ -327,4 +304,99 @@ body {
 	margin: 1.227rem auto 0;
 	background: url(page-font3.png) no-repeat;
 	background-size: 5.92rem 0.973rem;
+}
+/* 回复贴 */
+.container-w405{
+	position: relative;
+	width: 5.4rem;
+	height: 6.293rem;
+	margin: 1.3rem auto 0;
+}
+.hand{
+	width: 0.68rem;
+	height: 2.72rem;
+}
+.hand1{
+	width: 0.88rem;
+	height: 3.493rem;
+}
+.hand2{
+	width: 0.533rem;
+	height: 2.093rem;
+}
+.hand3{
+	width: 0.667rem;
+	height: 2.68rem;
+}
+.hand4{
+	width:0.453rem;
+	height:1.8rem;
+}
+.hand5{
+	width: 0.707rem;
+	height: 2.867rem;
+}
+.font3{
+	width: 7.893rem;
+	height: 0.533rem;
+	margin: 1.227rem auto 0;
+	background: url(page-font4.png) no-repeat;
+	background-size: 7.893rem 0.533rem;
+}
+/* 果子 */
+.font-36{
+	margin-top: 1.6rem;
+	display: block;
+	text-align: center;
+	font-size: 0.48rem;
+	color: #fff;
+}
+.guozi{
+	position: absolute;
+	left: 50%;
+	margin-left: -2.4rem;
+	width: 4.8rem;
+	height: 4.12rem;
+	z-index: 2;
+}
+.font4{
+	margin: 1.1rem auto;
+	width:7.387rem;
+	height: 1.48rem;
+	background: url(page-font6.png) no-repeat center center;
+	background-size:7.387rem 1.48rem; 
+}
+/* 论坛大版主 */
+.font-50{
+	font-size: 0.667rem;
+	display: block;
+	text-align: center;
+	margin-top: 2.0rem;
+	color: #fff;
+}
+.font5{
+	width:3.133rem;
+	height: 0.533rem;
+	display: block;
+	margin: 0 auto ;
+	margin-top: 1.6rem; 
+	background: url(page-font5.png) no-repeat center center;
+	background-size: 3.133rem 0.533rem;
+}
+.lt-book{
+	display: block;
+	position: absolute;
+	top: 3.76rem;
+	left: 50%;
+	margin-left: -2.567rem;
+	width: 5.133rem;	
+	height: 0.867rem;
+}
+.huangguan{
+	display: block;
+	position: absolute;
+	width: 4.72rem;
+	height: 2.36rem;
+	top: 0.867rem;
+	left: 1.67rem;
 }
